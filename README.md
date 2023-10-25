@@ -12,25 +12,6 @@ LOOKUP: the command responsible for looking up the title of a rfc in the system 
 ADD: the command responsible for adding a RFC node to the server's list after calling 'GET'.
 LIST: the command responsbile for displaying all RFCs in the server's list database.
 
-# Project Structure
-
-TCP_project/
-│
-├── server.cpp
-│
-├── Makefile
-│
-├── client_directory1/
-│   ├── client.cpp
-│   ├── rfc1234.txt
-│   └── rfc3457.txt
-│
-├── client_directory2/
-│   ├── client.cpp
-│   ├── rfc123.txt
-│   └── rfc2345.txt
-│
-└── other_client_directories...
 
 # Installation
 
