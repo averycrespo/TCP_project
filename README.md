@@ -2,16 +2,20 @@
 
 Peer-to-Peer Server / Client socket program in C++ that can send and download 'rfc*.txt' files.
 The server consists of two linked lists with one that contains unique clients connected to the server 
-and the other list maintaining a list of the RFC's on the server. 
-Once client connection is made, the client automatically uploads its RFCs to the server.
+and the other list maintaining a list of the RFCs on the server. 
+Once the client connection is made, the client automatically uploads its RFCs to the server.
 Upon client disconnect the client's corresponding RFCs are deleted from the list.
 
 Clients have four commands: 'GET', 'LOOKUP', 'ADD', and 'LIST'.
-GET: the command responsible for retrieving and downloading the rfc textfile.
-LOOKUP: the command responsible for looking up the title of a rfc in the system given a number.
-ADD: the command responsible for adding a RFC node to the server's list after calling 'GET'.
-LIST: the command responsbile for displaying all RFCs in the server's list database.
 
+GET: the command responsible for retrieving and downloading the RFC text file.
+LOOKUP: the command responsible for looking up the title of an RFC in the system given a number.
+ADD: the command responsible for adding an RFC node to the server's list after calling 'GET'.
+LIST: the command responsible for displaying all RFCs in the server's list database.
+
+# Project Structure
+
+https://github.com/averycrespo/TCP_project/wiki/Project-Structure
 
 # Installation
 
@@ -30,7 +34,7 @@ Calling 'make' in the TCP_project directory will compile the files, but only up 
 
 ## Notes (Important)
 -Due to how this program was compiled using SSH my IDE would only run and configure to Linux.
-As such, when testing the GET commnad, 'Linux' as my operating system would only work.
+As such, when testing the GET command, 'Linux' as my operating system would only work.
 
 -When clients are connecting to the server their respective PORT NUMBER will be printed out on the server side. This number must be used by the respective client when calling ADD/LOOKUP/LIST. 
 
